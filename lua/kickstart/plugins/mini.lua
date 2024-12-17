@@ -32,6 +32,11 @@ return {
         return '%2l:%-2v'
       end
 
+      -- Tabline:
+      -- I like the appearance of bufferline better
+      -- local tabline = require 'mini.tabline'
+      -- tabline.setup { show_icons = vim.g.have_nerd_font }
+
       -- ... and there is more!
       --  Check out: https://github.com/echasnovski/mini.nvim
     end,
