@@ -39,6 +39,38 @@ vim.keymap.set('n', '<leader>q', ':bp<cr>')
 vim.keymap.set('n', '<leader>w', ':bn<cr>')
 vim.keymap.set('n', '<leader>x', ':bd<cr>')
 
+-- splits
+vim.keymap.set('n', '<leader>sp', ':<C-u>split<cr>')
+vim.keymap.set('n', '<leader>v', ':<C-u>vsplit<cr>')
+
+-- maintain selection while indenting
+vim.keymap.set('v', '<', '<gv')
+vim.keymap.set('v', '>', '>gv')
+
+-- sanity
+vim.cmd [[
+cnoreabbrev W! w!
+cnoreabbrev W1 w!
+cnoreabbrev w1 w!
+cnoreabbrev Q! q!
+cnoreabbrev Q1 q!
+cnoreabbrev q1 q!
+cnoreabbrev Qa! qa!
+cnoreabbrev Qall! qall!
+cnoreabbrev Wa wa
+cnoreabbrev Wq wq
+cnoreabbrev wQ wq
+cnoreabbrev WQ wq
+cnoreabbrev wq1 wq!
+cnoreabbrev Wq1 wq!
+cnoreabbrev wQ1 wq!
+cnoreabbrev WQ1 wq!
+cnoreabbrev W w
+cnoreabbrev Q q
+cnoreabbrev Qa qa
+cnoreabbrev Qall qall
+]]
+
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
 

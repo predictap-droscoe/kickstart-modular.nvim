@@ -53,6 +53,10 @@ vim.opt.splitbelow = true
 vim.opt.list = true
 vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
 
+for i, c in ipairs { '<', '>', 'h', 'l', '[', ']' } do
+  vim.opt.whichwrap:append(c)
+end
+
 -- Preview substitutions live, as you type!
 vim.opt.inccommand = 'split'
 
@@ -61,5 +65,26 @@ vim.opt.cursorline = true
 
 -- Minimal number of screen lines to keep above and below the cursor.
 vim.opt.scrolloff = 10
+
+-- from old vimrc
+
+vim.opt.swapfile = false
+vim.opt.encoding = 'utf-8'
+vim.opt.fileencoding = 'utf-8'
+vim.opt.fileencodings = { 'utf-8' }
+vim.opt.bomb = true
+vim.opt.binary = true
+
+vim.opt.hidden = true -- don't complain when hiding unedited files
+vim.opt.fileformats = { 'unix', 'dos', 'mac' }
+vim.opt.ruler = true
+
+-- confirm instead of erroring when exiting after not viewing all opened files
+vim.opt.confirm = true
+
+-- tabstuff
+vim.opt.tabstop = 2
+vim.opt.shiftwidth = 0
+vim.opt.expandtab = true
 
 -- vim: ts=2 sts=2 sw=2 et
