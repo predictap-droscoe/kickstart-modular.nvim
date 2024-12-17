@@ -37,6 +37,7 @@ vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper win
 -- other navigation cmds
 vim.keymap.set('n', '<leader>q', ':bp<cr>')
 vim.keymap.set('n', '<leader>w', ':bn<cr>')
+vim.keymap.set('n', '<leader>x', ':bd<cr>')
 
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
