@@ -10,7 +10,7 @@ return {
       ['typescript'] = true,
       ['typescriptreact'] = true,
       ['sql'] = true,
-      ['lua'] = false,
+      ['lua'] = true,
       ['rust'] = true,
       ['go'] = true,
       ['python'] = true,
